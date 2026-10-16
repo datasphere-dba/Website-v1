@@ -25,6 +25,7 @@ export const siteConfig = {
   phoneRaw: "09980722144",
   phoneHref: "tel:09980722144",
   email: "training@datasphere.co.in",
+  whatsappHref: "https://wa.me/919980722144",
   social: {
     linkedin: "https://www.linkedin.com/company/datasphere-edusolutions-pvt-ltd/",
     youtube: "https://youtube.com/@dataspherein?si=hy5DqqMBDh3Mb7EC",
@@ -35,6 +36,7 @@ export const siteConfig = {
   nav: [
     { label: "Home", href: "/" },
     { label: "Courses", href: "/courses" },
+    { label: "dbaStanza", href: "https://training.datasphere.co.in" },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
