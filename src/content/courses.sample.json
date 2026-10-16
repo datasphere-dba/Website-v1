@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "sample-course-alpha",
+    "title": "SAMPLE Course Alpha",
+    "category": "SAMPLE",
+    "summary": "SAMPLE data for the scaffold. Not a real course. Replace with the course sheet.",
+    "durationHours": 10,
+    "fees": [
+      { "plan": "SAMPLE plan", "amountInr": "TODO", "note": "TODO: confirm price from the course sheet" }
+    ],
+    "batches": [
+      { "startDate": "2099-01-01", "schedule": "SAMPLE schedule", "mode": "online" }
+    ],
+    "enrolUrl": "https://training.datasphere.co.in",
+    "faq": [
+      { "question": "SAMPLE question?", "answer": "SAMPLE answer." }
+    ],
+    "seo": {
+      "title": "SAMPLE Course Alpha",
+      "description": "SAMPLE description for a placeholder course."
+    }
+  },
+  {
+    "slug": "sample-course-beta",
+    "title": "SAMPLE Course Beta",
+    "category": "SAMPLE",
+    "summary": "SAMPLE data for the scaffold. Not a real course. Replace with the course sheet.",
+    "fees": [
+      { "plan": "SAMPLE plan", "amountInr": "TODO", "note": "TODO: confirm price from the course sheet" }
+    ],
+    "batches": [],
+    "enrolUrl": "https://training.datasphere.co.in",
+    "faq": [],
+    "seo": {
+      "title": "SAMPLE Course Beta",
+      "description": "SAMPLE description for a placeholder course."
+    }
+  }
+]

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Design tokens. Use the token names in classes (bg-paper, text-ink, font-serif…),
+   never raw hex values in components. */
+@theme {
+  --color-paper: #f6f3ec;
+  --color-ink: #121735;
+  --color-green: #0f6b3f;
+  --color-sage: #dde7d6;
+  --color-linen: #ede8dc;
+
+  /* Sharp corners everywhere. */
+  --radius: 0;
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+  --radius-4xl: 0;
+
+  /* Hairline rules and borders. Use the border-hairline utilities below. */
+  --hairline: 1px;
+}
+
+/* Font variables are set on <html> by next/font in the root layout.
+   `inline` makes Tailwind use the var() directly so it resolves there. */
+@theme inline {
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --font-sans: var(--font-hanken-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+@utility border-hairline {
+  border-style: solid;
+  border-width: var(--hairline);
+}
+
+@utility border-t-hairline {
+  border-top-style: solid;
+  border-top-width: var(--hairline);
+}
+
+@utility border-b-hairline {
+  border-bottom-style: solid;
+  border-bottom-width: var(--hairline);
+}
+
+@layer base {
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-green);
+    outline-offset: 2px;
+  }
+}
