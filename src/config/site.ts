@@ -21,10 +21,16 @@ export const siteConfig = {
     postalCode: "560070",
     country: "IN",
   },
-  phone: "+91 99807 22144",
-  phoneHref: "tel:+919980722144",
+  phone: "09980722144",
+  phoneRaw: "09980722144",
+  phoneHref: "tel:09980722144",
   email: "training@datasphere.co.in",
   whatsappHref: "https://wa.me/919980722144",
+  social: {
+    linkedin: "https://www.linkedin.com/company/datasphere-edusolutions-pvt-ltd/",
+    youtube: "https://youtube.com/@dataspherein?si=hy5DqqMBDh3Mb7EC",
+    whatsapp: "https://wa.me/919980722144",
+  },
   /** Enrol / login / purchase happen on TrainerCentral. */
   trainerCentralUrl: "https://training.datasphere.co.in",
   nav: [

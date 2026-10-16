@@ -129,12 +129,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        {/* TODO: real LinkedIn and YouTube URLs. */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-paper/50">
           <p>© 2026 {siteConfig.legalName}. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <a
-              href="https://linkedin.com"
+              href={siteConfig.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-paper transition-colors"
@@ -142,7 +141,7 @@ export function Footer() {
               LinkedIn
             </a>
             <a
-              href="https://youtube.com"
+              href={siteConfig.social.youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-paper transition-colors"
@@ -150,7 +149,7 @@ export function Footer() {
               YouTube
             </a>
             <a
-              href={siteConfig.whatsappHref}
+              href={siteConfig.social.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-paper transition-colors"

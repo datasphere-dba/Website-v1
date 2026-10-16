@@ -34,3 +34,4 @@
 - 16 Oct 2026: Scaffolded base folder structure (prompt 01); all routes render, build passes.
 - 16 Oct 2026: Built full Home page from "Main" & "HomeMobile" artboards with high-fidelity components, responsive layouts, and verified in browser.
 - 16 Oct 2026: Home page visual fixes: hero card no longer covers the photo, missing borders fixed (non-existent `divide-*-hairline` classes), section headers match design, mentor photo full-bleed, form error state, mobile tidy-up.
+- 16 Oct 2026: Rebuilt About page, Header, Footer, and social/contact links to match reference mockups on branch feat/about-page.
