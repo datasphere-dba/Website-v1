@@ -1,3 +1,4 @@
+import { ChatLauncher } from "@/components/layout/ChatLauncher";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MOBILE_STICKY_BAR_PADDING, MobileStickyBar } from "@/components/layout/MobileStickyBar";
@@ -11,6 +12,7 @@ export default function SiteLayout({ children }: LayoutProps<"/">) {
       <main className="flex-1">{children}</main>
       <Footer />
       <MobileStickyBar />
+      <ChatLauncher />
     </div>
   );
 }

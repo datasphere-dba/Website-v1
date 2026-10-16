@@ -6,18 +6,18 @@
 
 ## Current state
 - Repo `datasphere-dba/Website-v1`: Next.js 16.4, React 19.3, TypeScript strict, App Router, `src/`, Tailwind v4, ESLint.
-- Base skeleton scaffolded on branch `chore/scaffold-structure` (not committed yet, waiting for review): all routes as placeholders, `(site)` + `admin` layouts, design tokens + fonts in `globals.css`/root layout, `src/config/site.ts`, sample content + `lib/` readers, sitemap/robots, `/api/leads` 501 stub, `.env.example`. Lint, tsc and build pass.
-- Design canvas (11 artboards) and PNG mockups are ready as reference.
+- Complete Home page built and verified against the "Main" (`01-home.png`) and "HomeMobile" (`10-home_mobile.png`) artboards.
+- Sections built: Header (announcement bar + nav + mobile menu), Hero (with cropped Mohan Kumar S. portrait & live batch status card), Programs (Database Specialist MAP, Double Track: PM, T-01..T-03 table), Learning Modes (OLT, HML, dbaStanza), Mentor Spotlight (quote + photo + 3 pillars), Testimonials (3 DBA alumni cards), Lead Enquiry Form (interactive with instant feedback), and dark editorial Footer.
+- TypeScript check (`npx tsc --noEmit`), ESLint (`npm run lint`), and production build (`npm run build`) all pass with 0 errors.
+
+- Home page visual pass (16 Oct, evening): matched against the Main/HomeMobile artboards. Shared `SectionIntro` + `ChatLauncher` + `MainNav` (active link) components added; container widened to 85rem.
 
 ## Next steps
-1. Review + commit the scaffold, open PR into `main`.
-2. Build Header, Footer, mobile sticky bar for real from the canvas.
-3. Build Home page from the canvas.
-4. Convert course sheet → `src/content/courses.json`; build `/courses` and `/courses/[slug]`.
-5. Blog: import the 68 Markdown posts; build `/blog` and `/blog/[slug]`.
-6. About, Contact; enquiry form → Zoho CRM (server-side).
-7. Decide admin panel DB + auth, then build `/admin`.
-8. Connect Netlify (org account), get preview URL.
+1. Convert course sheet → `src/content/courses.json`; build `/courses` and `/courses/[slug]`.
+2. Blog: import the 68 Markdown posts; build `/blog` and `/blog/[slug]`.
+3. About, Contact; enquiry form → Zoho CRM (server-side).
+4. Decide admin panel DB + auth, then build `/admin`.
+5. Connect Netlify (org account), get preview URL.
 
 ## Waiting on client / HR
 - Company name and address to display.
@@ -26,6 +26,11 @@
 - Netlify account on the org email.
 - Who receives lead alert emails.
 
+## Waiting on the team (home page)
+- Founding year ("Since 2012"), next batch date ("24th Feb"), batch timings, programme fees, LinkedIn/YouTube URLs.
+
 ## Session log
 - 16 Oct 2026: Added CLAUDE.md and docs/ memory system.
 - 16 Oct 2026: Scaffolded base folder structure (prompt 01); all routes render, build passes.
+- 16 Oct 2026: Built full Home page from "Main" & "HomeMobile" artboards with high-fidelity components, responsive layouts, and verified in browser.
+- 16 Oct 2026: Home page visual fixes: hero card no longer covers the photo, missing borders fixed (non-existent `divide-*-hairline` classes), section headers match design, mentor photo full-bleed, form error state, mobile tidy-up.
