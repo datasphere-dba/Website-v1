@@ -24,11 +24,13 @@ export const siteConfig = {
   phone: "+91 99807 22144",
   phoneHref: "tel:+919980722144",
   email: "training@datasphere.co.in",
+  whatsappHref: "https://wa.me/919980722144",
   /** Enrol / login / purchase happen on TrainerCentral. */
   trainerCentralUrl: "https://training.datasphere.co.in",
   nav: [
     { label: "Home", href: "/" },
     { label: "Courses", href: "/courses" },
+    { label: "dbaStanza", href: "https://training.datasphere.co.in" },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
