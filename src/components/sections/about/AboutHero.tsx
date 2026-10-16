@@ -11,7 +11,7 @@ export function AboutHero() {
       aria-labelledby="about-hero-heading"
       className="border-b-hairline border-ink/15 py-14 sm:py-20"
     >
-      <Container>
+      <Container className="max-w-[1100px] px-6 lg:px-10">
         {/* Breadcrumb / Eyebrow */}
         <p className="font-mono text-xs tracking-[0.2em] text-ink/50 uppercase">
           ABOUT · DATASPHERE
@@ -29,16 +29,16 @@ export function AboutHero() {
         </h1>
 
         {/* Two-column body copy */}
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:gap-12 text-[13px] md:text-[13.5px] leading-[1.65] text-ink/80">
-          <p>
-            <span className="md:block">DataSphere trains working database administrators to keep up</span>
-            <span className="md:block">as the role shifts — from a single RDBMS to hybrid, NoSQL and</span>
-            <span className="md:block">cloud databases running side by side.</span>
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:gap-14 items-start">
+          <p className="text-[14.5px] sm:text-[15px] lg:text-[15.5px] leading-[1.6] text-ink font-medium">
+            <span className="md:block md:whitespace-nowrap">DataSphere trains working database administrators to keep up</span>
+            <span className="md:block md:whitespace-nowrap">as the role shifts — from a single RDBMS to hybrid, NoSQL and</span>
+            <span className="md:block md:whitespace-nowrap">cloud databases running side by side.</span>
           </p>
-          <p>
-            <span className="md:block">Traditional DBA tasks are being automated. The work that remains is harder:</span>
-            <span className="md:block">choosing the right database, migrating to it, and running it in production. That is</span>
-            <span className="md:block">what every DataSphere course is built around.</span>
+          <p className="text-[12.5px] sm:text-[13px] lg:text-[13.5px] leading-[1.65] text-ink/65 font-normal pt-0.5">
+            <span className="md:block md:whitespace-nowrap">Traditional DBA tasks are being automated. The work that remains is harder:</span>
+            <span className="md:block md:whitespace-nowrap">choosing the right database, migrating to it, and running it in production. That is</span>
+            <span className="md:block md:whitespace-nowrap">what every DataSphere course is built around.</span>
           </p>
         </div>
       </Container>
