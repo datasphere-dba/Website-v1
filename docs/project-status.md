@@ -29,3 +29,4 @@
 ## Session log
 - 16 Oct 2026: Added CLAUDE.md and docs/ memory system.
 - 16 Oct 2026: Scaffolded base folder structure (prompt 01); all routes render, build passes.
+- 16 Oct 2026: Rebuilt About page, Header, Footer, and social/contact links to match reference mockups on branch two.

@@ -8,7 +8,7 @@ type ContainerProps = {
 /** Centers content with the site's max width and side padding. */
 export function Container({ children, className = "" }: ContainerProps) {
   return (
-    <div className={`mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div className={`mx-auto w-full max-w-[1128px] px-6 sm:px-10 lg:px-14 ${className}`}>
       {children}
     </div>
   );
