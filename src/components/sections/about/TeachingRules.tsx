@@ -30,7 +30,7 @@ export function TeachingRules() {
       aria-labelledby="rules-heading"
       className="bg-ink py-20 text-paper sm:py-24"
     >
-      <Container>
+      <Container className="max-w-[1100px] px-6 lg:px-10">
         {/* Header row */}
         <div className="grid gap-4 md:grid-cols-12 md:items-baseline">
           <p className="font-mono text-xs tracking-wider text-emerald-400 uppercase md:col-span-3">

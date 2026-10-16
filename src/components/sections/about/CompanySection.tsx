@@ -42,7 +42,7 @@ export function CompanySection() {
       aria-labelledby="company-heading"
       className="py-16 sm:py-24"
     >
-      <Container>
+      <Container className="max-w-[1100px] px-6 lg:px-10">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-14 lg:items-start">
           {/* Left heading */}
           <div className="lg:col-span-5">

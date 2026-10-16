@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/Container";
 export function AboutCTA() {
   return (
     <section aria-labelledby="about-cta-heading" className="pb-16 sm:pb-24">
-      <Container>
+      <Container className="max-w-[1100px] px-6 lg:px-10">
         <div className="rounded-sm bg-[#DCECE1] px-8 py-10 sm:px-12 sm:py-12">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <h2
