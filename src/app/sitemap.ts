@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
-
-// Static routes only for now.
-// TODO(seo): add /courses/[slug] and /blog/[slug] once real content is in.
-const staticRoutes = ["/", "/courses", "/blog", "/about", "/contact"];
+import { getAllCourses } from "@/lib/courses";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return staticRoutes.map((route) => ({
+  const staticRoutes = ["/", "/courses", "/blog", "/about", "/contact"];
+  const courseRoutes = getAllCourses().map((course) => `/courses/${course.slug}`);
+
+  return [...staticRoutes, ...courseRoutes].map((route) => ({
     url: new URL(route, siteConfig.url).toString(),
   }));
 }

@@ -19,8 +19,8 @@ export async function generateMetadata({
   if (!course) return {};
 
   return buildMetadata({
-    title: course.seo.title,
-    description: course.seo.description,
+    title: course.seo?.title || course.title,
+    description: course.seo?.description || course.subtitle || course.title,
     path: `/courses/${course.slug}`,
   });
 }
@@ -32,8 +32,13 @@ export default async function CoursePage({ params }: PageProps<"/courses/[slug]"
 
   return (
     <Container className="py-16">
-      <SectionHeading as="h1" eyebrow={course.category} title={course.title} />
-      <p className="mt-4 max-w-prose">{course.summary}</p>
+      <SectionHeading as="h1" eyebrow={course.technology.toUpperCase()} title={course.title} />
+      {course.subtitle && <p className="mt-4 max-w-prose text-ink/80">{course.subtitle}</p>}
+      <div className="mt-4 font-mono text-sm text-ink/70">
+        <span>₹{course.priceInr.toLocaleString("en-IN")}</span> ·{" "}
+        <span>Mode: {course.mode.toUpperCase()}</span> ·{" "}
+        <span>Kind: {course.kind}</span>
+      </div>
       <p className="mt-4 font-mono text-sm">
         TODO: build from the &quot;Courses&quot; artboard (course detail: hero with price →
         roadmap → how you learn → mentor → reviews → plans → FAQ → ask us).
