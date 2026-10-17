@@ -20,13 +20,13 @@
 2. Blog: import the 68 Markdown posts; build `/blog` and `/blog/[slug]`.
 3. About, Contact; enquiry form → Zoho CRM (server-side).
 4. Decide admin panel DB + auth, then build `/admin`.
-5. Connect Netlify (org account), get preview URL.
+5. Connect Vercel Pro (org account), get preview URL.
 
 ## Waiting on client / HR
 - Company name and address to display.
 - Which duplicate course versions to show.
 - Zoho CRM API access (and CRM Plus renewal, expires 25 Oct 2026).
-- Netlify account on the org email.
+- Vercel Pro account on the org email.
 - Who receives lead alert emails.
 
 ## Waiting on the team (home page)

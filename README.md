@@ -9,7 +9,7 @@ Official website for **DataSphere Edu Solutions Pvt. Ltd.** (datasphere.co.in), 
 - **Language**: TypeScript (strict)
 - **Styling**: Tailwind CSS v4 (design tokens in `@theme` inside `src/app/globals.css`)
 - **Package Manager**: npm
-- **Hosting**: Netlify (commercial org)
+- **Hosting**: Vercel Pro
 
 ## Project Structure
 

@@ -17,7 +17,7 @@ Instructions for Claude Code in this repo. Read this file fully at the start of 
 **During the session**
 - When a new decision is made (library, data model, route, naming, hosting, etc.), add it to `docs/decisions.md` straight away: date, decision, why, alternatives rejected.
 - When something is blocked on the client/HR, add it to "Waiting on client" in `docs/project-status.md`.
-- If you learn a gotcha (a Next 16 quirk, a Netlify limit, a Zoho API detail), add it to section 9 "Gotchas" of this file.
+- If you learn a gotcha (a Next 16 quirk, a Vercel limit, a Zoho API detail), add it to section 9 "Gotchas" of this file.
 
 **Before ending the session (or when Venkatesh says "done", "wrap up", "bas")**
 1. Update `docs/project-status.md`: "Current state", "Next steps", "Waiting on client", plus one line in "Session log" (date — what was done).
@@ -84,9 +84,9 @@ Rebuild of **datasphere.co.in** for **DataSphere Edu Solutions Pvt. Ltd.**, a Be
 - **Tailwind CSS v4** (CSS-first config: tokens in `@theme` inside `src/app/globals.css`, no `tailwind.config.js`). Loaded via `@tailwindcss/turbopack`. Add `@tailwindcss/typography` for Markdown blog posts.
 - **ESLint 9** (`eslint-config-next`).
 - Package manager: **npm** (`package-lock.json` is committed; don't switch to pnpm/yarn).
-- **Hosting: Netlify free plan** (commercial use allowed). Vercel Hobby is not allowed for a commercial org repo, so don't add Vercel-only features (`@vercel/*` packages, Vercel KV/Blob, Edge Config). GoDaddy stays as domain/DNS only.
-- **Repo:** `github.com/DataSphere-Edu-Solutions-Pvt-Ltd/Website-v1`, owned by the company org. Venkatesh is a collaborator. `main` auto-deploys once Netlify is connected.
-- **Not decided yet:** database + auth for the admin panel, email service, chatbot. Propose 2–3 options with trade-offs (free tier, works on Netlify, easy for a non-dev team) and wait for a decision.
+- **Hosting: Vercel Pro**. (Netlify rejected: free plan has a hard 300-credit monthly cap that pauses the site, 15 credits per production deploy). Vercel features (Vercel Blob, etc.) are allowed. GoDaddy stays as domain/DNS only.
+- **Repo:** `github.com/DataSphere-Edu-Solutions-Pvt-Ltd/Website-v1`, owned by the company org. Venkatesh is a collaborator. `main` auto-deploys once Vercel Pro is connected.
+- **Backend architecture:** Database (phase 2) = Neon Postgres via Vercel Marketplace (region `aws-ap-southeast-1` Singapore, functions region `sin1`), ORM Drizzle, auth Auth.js, images Vercel Blob (all phase 2). Enquiry emails = Resend. Launch course data = JSON files + zod (read strictly via `src/lib/courses.ts`). Chatbot: not decided yet (SalesIQ vs custom RAG).
 
 ---
 
@@ -162,7 +162,7 @@ Tokens (put in `@theme`, use the token names in classes, never raw hex in compon
 
 - **Server Components by default.** Add `"use client"` only for interactivity (forms, menus, filters), and keep client components small and at the leaves.
 - Use Server Actions or route handlers for form submits. **Validate every input on the server** (zod or similar). Never trust the client.
-- **Secrets only in env vars** (`.env.local`, gitignored; Netlify env settings in production). Never hard-code or log keys, Zoho tokens or passwords, and never prefix a secret with `NEXT_PUBLIC_`. Keep `.env.example` updated with variable **names** only.
+- **Secrets only in env vars** (`.env.local`, gitignored; Vercel env settings in production). Never hard-code or log keys, Zoho tokens or passwords, and never prefix a secret with `NEXT_PUBLIC_`. Keep `.env.example` updated with variable **names** only.
 - Zoho CRM calls happen **only on the server** (OAuth refresh-token flow). Handle failure gracefully: if Zoho is down, still email the lead so nothing is lost.
 - Forms: spam protection (honeypot and/or Turnstile), success and error states, a phone field that's actually a phone field (the old site stored phone in "message").
 - Use `next/image` for images and `next/link` for internal links. Every page exports `metadata` or `generateMetadata` (title, description, canonical, Open Graph).
@@ -176,8 +176,8 @@ Tokens (put in `@theme`, use the token names in classes, never raw hex in compon
 
 ## 8. Git workflow
 
-- `main` = deployable; it will auto-deploy to Netlify. Don't push broken builds to `main`.
-- Work on short branches: `feat/home-page`, `fix/mobile-nav`, `chore/tokens`. Open a PR into `main` (Netlify gives a preview URL per PR).
+- `main` = deployable; it will auto-deploy to Vercel Pro. Don't push broken builds to `main`.
+- Work on short branches: `feat/home-page`, `fix/mobile-nav`, `chore/tokens`. Open a PR into `main` (Vercel gives a preview URL per PR).
 - Commit messages follow Conventional Commits, as in the existing history: `feat: …`, `fix: …`, `refactor: …`, `chore: …`, `docs: …`.
 - Only commit or push when Venkatesh asks. Never force-push `main`, never rewrite pushed history, never commit `.env*`.
 - `AGENTS.md` is managed by `next dev`; leave its block alone.
@@ -205,7 +205,7 @@ Folder: `Downloads\DataSphere Internship\DataSphere\`
 - `Week 1 Backup (8 Oct 2026)\01 GoDaddy DNS records ….csv`: DNS backup (needed on launch day).
 - `Week 1 Backup (8 Oct 2026)\07 Zoho CRM findings.docx`, `08 TrainerCentral findings.docx`
 - `DataSphere page designs.zip`: 11 PNG mockups.
-- `datasphere_website_setup_context.md`: GitHub/Netlify/DNS decisions + launch-day checklist.
+- `datasphere_website_setup_context.md`: GitHub/Vercel/DNS decisions + launch-day checklist.
 - `DataSphere_Chatbot_Session_Context.md`: chatbot options research.
 
 Don't copy these into the repo wholesale. Convert only what's needed (e.g. course sheet → `src/content/courses.json`) and say where it came from.
@@ -214,7 +214,7 @@ Don't copy these into the repo wholesale. Convert only what's needed (e.g. cours
 
 ## 11. Launch rules (later, but never break these)
 
-- Test fully on the `*.netlify.app` URL first.
+- Test fully on the `*.vercel.app` URL first.
 - On GoDaddy, change **only** the A (`@`) and CNAME (`www`) records. **Never touch MX/TXT** (company email). Screenshot the DNS records first.
 - Add 301 redirects from every old WordPress URL (pages + 68 blog posts) to the new URLs.
 - Make sure the production site is indexable (no `noindex`), sitemap submitted, GA4 working.
