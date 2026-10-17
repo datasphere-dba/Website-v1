@@ -1,44 +1,20 @@
-// Shared course types. Shape follows the course sheet
-// ("02 Course details – fees & enrol links.xlsx") so the admin panel
-// and database can take over later without changing the pages.
+import type { z } from "zod";
+import type {
+  CourseSchema,
+  TechnologySchema,
+  CourseKindSchema,
+  CourseModeSchema,
+  CourseStatusSchema,
+  CourseFaqItemSchema,
+  CourseBatchSchema,
+  CourseSeoSchema,
+} from "@/lib/course-schema";
 
-export type Fee = {
-  /** Plan name shown on the pricing table, e.g. "Self-paced", "Live batch". */
-  plan: string;
-  /** Price in INR, or a "TODO" string until the course sheet confirms it. */
-  amountInr: number | "TODO";
-  note?: string;
-};
-
-export type Batch = {
-  /** ISO date (YYYY-MM-DD). */
-  startDate: string;
-  /** Free text, e.g. "Mon–Fri, 7:00–8:30 AM IST". */
-  schedule: string;
-  mode: "online" | "classroom" | "hybrid";
-  seatsLeft?: number;
-};
-
-export type FaqItem = {
-  question: string;
-  answer: string;
-};
-
-export type SeoFields = {
-  title: string;
-  description: string;
-};
-
-export type Course = {
-  slug: string;
-  title: string;
-  category: string;
-  summary: string;
-  durationHours?: number;
-  fees: Fee[];
-  batches: Batch[];
-  /** TrainerCentral enrol link for this course. */
-  enrolUrl: string;
-  faq: FaqItem[];
-  seo: SeoFields;
-};
+export type Course = z.infer<typeof CourseSchema>;
+export type Technology = z.infer<typeof TechnologySchema>;
+export type CourseKind = z.infer<typeof CourseKindSchema>;
+export type CourseMode = z.infer<typeof CourseModeSchema>;
+export type CourseStatus = z.infer<typeof CourseStatusSchema>;
+export type CourseFaqItem = z.infer<typeof CourseFaqItemSchema>;
+export type CourseBatch = z.infer<typeof CourseBatchSchema>;
+export type CourseSeo = z.infer<typeof CourseSeoSchema>;
