@@ -8,7 +8,7 @@
 - Oct 2026: Leads go to Zoho CRM (Lead Source "Website…", field `Course_Enquired`) + email alert.
 - Oct 2026: Enrol/login/purchase stay on TrainerCentral; the site links out.
 - 13–14 Oct 2026: Code owned by the company GitHub org; Venkatesh is a collaborator.
-- 13–14 Oct 2026: Hosting decided on Vercel Pro. (Rejected: Netlify free plan has a hard 300-credit monthly cap that pauses the site, 15 credits per production deploy; Vercel Hobby not allowed for commercial/org repos; GoDaddy shared hosting can't run Next.js properly.) GoDaddy = DNS only.
+- 13–14 Oct 2026: Hosting on Netlify free. (Rejected: Vercel Hobby, not allowed for commercial/org repos; GoDaddy shared hosting can't run Next.js properly.) GoDaddy = DNS only. (superseded 17 Oct 2026 — see Vercel Pro below)
 - 14 Oct 2026: TypeScript + App Router + Tailwind CSS v4 (tokens in `@theme`, typography plugin for blog).
 - 16 Oct 2026: Course page order: hero with price → roadmap → how you learn → mentor → reviews → plans → FAQ → ask us, sticky bar on mobile.
 - 16 Oct 2026: Public pages live in route group `(site)` (shared Header/Footer/sticky bar); `/admin` has its own layout with `robots: noindex`. (Rejected: separate root layouts, they force full page reloads between groups.)

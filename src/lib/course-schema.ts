@@ -28,7 +28,7 @@ export const CourseFaqItemSchema = z.object({
 export const CourseBatchSchema = z.object({
   startDate: z.string().optional(),
   schedule: z.string().optional(),
-  mode: z.enum(["online", "classroom", "hybrid", "live", "self-paced"]).or(z.string()).optional(),
+  mode: z.enum(["online", "classroom", "hybrid"]).optional(),
   seatsLeft: z.number().int().nonnegative().optional(),
 });
 

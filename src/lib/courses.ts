@@ -1,45 +1,40 @@
-import fs from "node:fs";
-import path from "node:path";
 import { CourseSchema } from "@/lib/course-schema";
+import { rawCourses } from "@/content/courses";
 import type { Course, Technology } from "@/types/course";
 
-const COURSES_DIR = path.join(process.cwd(), "src", "content", "courses");
-
 function loadCourses(): Course[] {
-  if (!fs.existsSync(COURSES_DIR)) {
-    return [];
-  }
-
-  const files = fs.readdirSync(COURSES_DIR).filter((file) => file.endsWith(".json"));
   const loaded: Course[] = [];
 
-  for (const file of files) {
-    const filePath = path.join(COURSES_DIR, file);
-    const content = fs.readFileSync(filePath, "utf-8");
-    let json: unknown;
-    try {
-      json = JSON.parse(content);
-    } catch (err) {
-      throw new Error(`Failed to parse JSON in course file "${file}": ${(err as Error).message}`);
-    }
+  for (let i = 0; i < rawCourses.length; i++) {
+    const raw = rawCourses[i];
+    const candidateSlug =
+      typeof raw === "object" && raw !== null && "slug" in raw && typeof (raw as { slug: unknown }).slug === "string"
+        ? (raw as { slug: string }).slug
+        : `course-at-index-${i}`;
 
-    const result = CourseSchema.safeParse(json);
+    const result = CourseSchema.safeParse(raw);
     if (!result.success) {
       const issueDetails = result.error.issues
         .map((issue) => `  - [${issue.path.join(".")}] ${issue.message}`)
         .join("\n");
-      throw new Error(`Schema validation failed for course file "${file}":\n${issueDetails}`);
+      throw new Error(`Schema validation failed for course "${candidateSlug}":\n${issueDetails}`);
     }
 
     loaded.push(result.data);
   }
 
-  return loaded
+  const live = loaded
     .filter((course) => course.status === "live")
     .sort((a, b) => a.order - b.order);
+
+  if (live.length === 0) {
+    throw new Error("Zero live courses loaded. Course data bundle is empty or corrupted.");
+  }
+
+  return live;
 }
 
-// Module-level cache evaluated at build time (predictable build-time data, no runtime fs in request handlers)
+// Module-level static cache evaluated at build time (bundled via static imports, no fs or runtime file access)
 const liveCourses: Course[] = loadCourses();
 
 export function getAllCourses(): Course[] {
