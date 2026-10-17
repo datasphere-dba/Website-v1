@@ -1,29 +1,7 @@
+import { LEARNING_MODES } from "@/config/learning-modes";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { SectionIntro } from "@/components/ui/SectionIntro";
-
-const modes = [
-  {
-    code: "OLT",
-    title: "Online Live Training",
-    summary: "Instructor-led classroom-style sessions with your batch, on a fixed schedule.",
-    points: ["Weekday or weekend batches", "Early morning or late evening"],
-  },
-  {
-    code: "HML",
-    title: "Hybrid Mode Learning",
-    summary: "Learn in your free time, with live guidance sessions from Mohan to keep you moving.",
-    points: ["Guidance on weekdays or weekends", "Made for busy DBAs"],
-  },
-  {
-    code: "dbaStanza",
-    title: "Daily DBA live modules",
-    summary:
-      "Short specialised modules (RAC, HA/DR, migration, upgrades) you pick up in your week-off.",
-    points: ["Modular courses, maximum knowledge"],
-    portal: true,
-  },
-];
 
 export function LearningModesSection() {
   return (
@@ -40,12 +18,12 @@ export function LearningModesSection() {
         />
 
         <div className="mt-12 grid grid-cols-1 border-t border-ink md:grid-cols-3 lg:mt-16">
-          {modes.map((mode, i) => (
+          {LEARNING_MODES.map((mode, i) => (
             <div
               key={mode.code}
               className={`border-ink/15 py-8 md:pt-10 md:pb-2 ${
                 i > 0 ? "border-t md:border-t-0 md:border-l md:pl-10" : ""
-              } ${i < modes.length - 1 ? "md:pr-10" : ""}`}
+              } ${i < LEARNING_MODES.length - 1 ? "md:pr-10" : ""}`}
             >
               <p
                 className={`font-mono text-4xl tracking-tight sm:text-5xl ${
