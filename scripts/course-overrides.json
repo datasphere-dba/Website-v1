@@ -1,0 +1,32 @@
+{
+  "aurora-potgresql15-db-on-aws-cloud-rds-dbastanza-hml": {
+    "title": "Aurora PostgreSQL15 DB on AWS Cloud RDS, dbaStanza HML"
+  },
+  "oracle-exadata-on-oracle-cloud-infrastucture-oci-ds-v1-hml": {
+    "title": "Oracle Exadata on Oracle Cloud Infrastructure - OCI, DS-v1, HML"
+  },
+  "database-specialist-map-2026-olt-v2": {
+    "technology": "cloud",
+    "kind": "package",
+    "mode": "olt"
+  },
+  "super-saver-package-for-oracle-dba": {
+    "technology": "oracle",
+    "kind": "package",
+    "mode": "hml"
+  },
+  "postgresql-premium-2025-adv-consulting-pack-upgrade-migration-splidx-useasnosql-english": {
+    "technology": "postgresql",
+    "kind": "package",
+    "mode": "hml"
+  },
+  "oci-oracle-cloud-infrastructure": {
+    "mode": "hml"
+  },
+  "postgresql17-as-ai-db": {
+    "mode": "hml"
+  },
+  "oracle19c-dba-on-aws-cloud-rds": {
+    "mode": "hml"
+  }
+}
