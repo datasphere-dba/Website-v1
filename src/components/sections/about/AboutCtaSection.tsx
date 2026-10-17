@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
  * Matches the bottom sage card on the About screenshot with solid green button
  * and outlined secondary button.
  */
-export function AboutCTA() {
+export function AboutCtaSection() {
   return (
     <section aria-labelledby="about-cta-heading" className="pb-16 sm:pb-24">
       <Container className="max-w-[1100px] px-6 lg:px-10">

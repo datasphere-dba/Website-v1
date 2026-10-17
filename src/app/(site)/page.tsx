@@ -3,7 +3,7 @@ import { buildMetadata } from "@/lib/seo";
 import { HeroSection } from "@/components/sections/home/HeroSection";
 import { ProgramsSection } from "@/components/sections/home/ProgramsSection";
 import { LearningModesSection } from "@/components/sections/home/LearningModesSection";
-import { MentorSection } from "@/components/sections/home/MentorSection";
+import { HomeMentorSection } from "@/components/sections/home/HomeMentorSection";
 import { TestimonialsSection } from "@/components/sections/home/TestimonialsSection";
 import { LeadEnquirySection } from "@/components/sections/home/LeadEnquirySection";
 
@@ -23,7 +23,7 @@ export default function HomePage() {
       <HeroSection />
       <ProgramsSection />
       <LearningModesSection />
-      <MentorSection />
+      <HomeMentorSection />
       <TestimonialsSection />
       <LeadEnquirySection />
     </>

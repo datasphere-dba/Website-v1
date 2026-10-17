@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
  * session to the exam."  Three expertise columns below (Oracle, PostgreSQL/
  * MongoDB, AWS) separated by hairline rules.
  */
-export function MentorSection() {
+export function AboutMentorSection() {
   return (
     <section
       aria-labelledby="mentor-heading"

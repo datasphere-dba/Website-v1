@@ -24,7 +24,7 @@ const rules = [
   },
 ] as const;
 
-export function TeachingRules() {
+export function TeachingRulesSection() {
   return (
     <section
       aria-labelledby="rules-heading"

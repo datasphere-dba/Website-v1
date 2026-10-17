@@ -8,7 +8,7 @@ const pillars = [
 ];
 
 /** Dark split section: text on the left, photo filling the right half edge to edge. */
-export function MentorSection() {
+export function HomeMentorSection() {
   return (
     <section className="relative overflow-hidden bg-ink text-paper">
       <Container className="py-16 sm:py-24 lg:min-h-[44rem]">

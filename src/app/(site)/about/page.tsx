@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
-import { AboutHero } from "@/components/sections/about/AboutHero";
-import { MentorSection } from "@/components/sections/about/MentorSection";
-import { TeachingRules } from "@/components/sections/about/TeachingRules";
+import { AboutHeroSection } from "@/components/sections/about/AboutHeroSection";
+import { AboutMentorSection } from "@/components/sections/about/AboutMentorSection";
+import { TeachingRulesSection } from "@/components/sections/about/TeachingRulesSection";
 import { CompanySection } from "@/components/sections/about/CompanySection";
-import { AboutCTA } from "@/components/sections/about/AboutCTA";
+import { AboutCtaSection } from "@/components/sections/about/AboutCtaSection";
 
 export const metadata: Metadata = buildMetadata({
   title: "About us",
@@ -17,11 +17,11 @@ export const metadata: Metadata = buildMetadata({
 export default function AboutPage() {
   return (
     <>
-      <AboutHero />
-      <MentorSection />
-      <TeachingRules />
+      <AboutHeroSection />
+      <AboutMentorSection />
+      <TeachingRulesSection />
       <CompanySection />
-      <AboutCTA />
+      <AboutCtaSection />
     </>
   );
 }

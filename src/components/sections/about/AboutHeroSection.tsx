@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
  * Matches the top section of the About artboard: large serif headline,
  * two-column copy beneath (left: what DataSphere trains; right: why it's different).
  */
-export function AboutHero() {
+export function AboutHeroSection() {
   return (
     <section
       aria-labelledby="about-hero-heading"
