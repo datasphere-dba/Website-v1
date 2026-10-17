@@ -8,8 +8,13 @@ type ButtonProps = {
   variant?: ButtonVariant;
   className?: string;
 } & (
-  | { href: string; external?: boolean }
-  | { href?: undefined; type?: "button" | "submit" }
+  | { href: string; external?: boolean; type?: never; onClick?: never }
+  | {
+      href?: undefined;
+      external?: never;
+      type?: "button" | "submit" | "reset";
+      onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    }
 );
 
 const base =
@@ -41,7 +46,7 @@ export function Button(props: ButtonProps) {
   }
 
   return (
-    <button type={props.type ?? "button"} className={classes}>
+    <button type={props.type ?? "button"} onClick={props.onClick} className={classes}>
       {children}
     </button>
   );

@@ -1,43 +1,43 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getAllCourses } from "@/lib/courses";
+import { CoursesExplorer } from "@/components/courses/CoursesExplorer";
+import { getAllCourses, getTechnologies } from "@/lib/courses";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Courses",
-  description: "All DataSphere database and DBA courses, with fees, batches and enrol links.",
+  description:
+    "Comprehensive DBA and database courses in Oracle, PostgreSQL, MySQL, MongoDB, and Cloud. Learn with real production architectures and live guidance.",
   path: "/courses",
 });
 
 export default function CoursesPage() {
   const courses = getAllCourses();
+  const technologies = getTechnologies();
 
   return (
-    <Container className="py-16">
-      <SectionHeading as="h1" eyebrow="Courses" title="Courses" />
-      <p className="mt-4 font-mono text-sm">TODO: build from the &quot;Courses&quot; artboard.</p>
+    <div className="py-12 sm:py-16">
+      <Container>
+        {/* PAGE HEADER (from artboard) */}
+        <header className="grid gap-6 border-b-hairline border-ink/20 pb-10 lg:grid-cols-12 lg:items-end lg:gap-12">
+          <div className="lg:col-span-7">
+            <p className="font-mono text-xs tracking-wider text-green uppercase">
+              Courses &amp; batches
+            </p>
+            <h1 className="mt-3 font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight text-ink">
+              Every course, every batch,{" "}
+              <span className="italic text-green">one page.</span>
+            </h1>
+          </div>
+          <p className="text-base text-ink/75 sm:text-lg lg:col-span-5 leading-relaxed">
+            Pick a program to see its syllabus, mode, and fee. Enrolment and classes happen on the
+            DataSphere learner portal.
+          </p>
+        </header>
 
-      <ul className="mt-8 divide-y divide-ink/20 border-t-hairline border-b-hairline border-ink/20">
-        {courses.map((course) => (
-          <li key={course.slug} className="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <Link href={`/courses/${course.slug}`} className="font-serif text-lg text-ink hover:text-green">
-                {course.title}
-              </Link>
-              {course.subtitle && <p className="text-sm text-ink/70">{course.subtitle}</p>}
-            </div>
-            <div className="flex shrink-0 items-center gap-3 font-mono text-xs text-ink/60">
-              <span className="uppercase">{course.technology}</span>
-              <span>·</span>
-              <span className="uppercase">{course.mode}</span>
-              <span>·</span>
-              <span className="font-bold text-ink">₹{course.priceInr.toLocaleString("en-IN")}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </Container>
+        {/* CLIENT FILTER BAR + COURSE LIST + ASIDE */}
+        <CoursesExplorer courses={courses} technologies={technologies} />
+      </Container>
+    </div>
   );
 }
