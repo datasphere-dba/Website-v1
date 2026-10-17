@@ -1,0 +1,15 @@
+{
+  "slug": "aurora-potgresql15-db-on-aws-cloud-rds-dbastanza-hml",
+  "title": "Aurora PostgreSQL15 DB on AWS Cloud RDS, dbaStanza HML",
+  "subtitle": "Aurora PotgreSQL15 DB on AWS Cloud RDS",
+  "technology": "postgresql",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 1999,
+  "enrolUrl": "https://training.datasphere.co.in/course/aurora-potgresql15-db-on-aws-cloud-rds-dbastanza-hml",
+  "descriptionHtml": "<p>Amazon Aurora is compatible with PostgreSQL DB on AWS Cloud RDS.</p><p>It is a fast-emerging database in the DBA world.</p><p>Customers are considering using the Aurora PostgreSQL database instead of traditional RDBMS.</p><p>Many traditional, licensed databases managed On-Premises are getting migrated to Aurora PostgreSQL Databases.</p><p>Aurora DB is gaining popularity as it overcomes the limitations and shortcomings of using PostgreSQL in a traditional way.</p><p>Even Aurora PostgreSQL DB has extended benefits over using PostgreSQL DB directly on AWS Cloud.</p><p>This course provides in-depth knowledge of Aurora PostgreSQL DBs' prowess, features, and capabilities.</p><p>The exclusivity of managing the Cluster for the Aurora PostgreSQL database is the high point of this course.</p><p>Now, Aurora PostgreSQL database is offered with the dbaStanza initiative at DataSphere with the associated components to make You, the DBA, an SME - Subject Matter Expert in handling the Regular Database requirements or the Special Database Migration solutions.</p><p>Yes, Aurora PostgreSQL eLearning is offered as HML - Hybrid Mode Learning, an Unique, very special program that comprises Daily DBA Sessions - Online Live Guidance with Mohan Sir, which enables You to interact with him to get his Experience as Knowledge.</p><p>Aurora PostgreSQL15 DB on AWS Cloud RDS</p><p>dbaStanza initiative @ DataSphere</p><p>HML - Hybrid Mode Learning</p><p>Version1</p>",
+  "featured": false,
+  "order": 11,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

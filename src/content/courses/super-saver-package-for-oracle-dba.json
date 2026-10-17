@@ -1,0 +1,15 @@
+{
+  "slug": "super-saver-package-for-oracle-dba",
+  "title": "Mega Super Saver Package for Oracle DBA",
+  "subtitle": "PostgreSQL Parley - OCI - Autonomous DB - PostgreSQL on AWS Cloud RDS - Aurora PostgreSQL DB on AWS Cloud - DB Migration, Oracle-to-PostgreSQL, Oracle19c on AWS Cloud RDS",
+  "technology": "oracle",
+  "kind": "package",
+  "mode": "hml",
+  "priceInr": 11999,
+  "enrolUrl": "https://training.datasphere.co.in/course/super-saver-package-for-oracle-dba",
+  "descriptionHtml": "<p><strong>Mega Super SAVER Package for Oracle DBA</strong></p><p><strong>a 6-in-1 Package</strong></p><p>1. PostgreSQL Parley: Upgrade-Migration-SpecialIndexes-UseAsNoSQL-DB</p><p>2. OCI - Oracle Cloud Infrastructure</p><p>3. Autonomous Oracle DB on OCI</p><p>4. PostgreSQL15 on AWS Cloud RDS <strong>plus</strong></p><p><strong> </strong>Aurora PostgreSQL15 DB on AWS Cloud</p><p>5. DB Migration: Oracle19c to PostgreSQL15 on AWS Cloud RDS</p><p>6. Oracle19c DBA on AWS Cloud RDS</p>",
+  "featured": false,
+  "order": 14,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

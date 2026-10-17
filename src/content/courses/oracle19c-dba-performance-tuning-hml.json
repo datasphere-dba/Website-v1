@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-dba-performance-tuning-hml",
+  "title": "Oracle19c DBA Performance Tuning, HML",
+  "subtitle": "Oracle19c DBA Performance Tuning",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-dba-performance-tuning-hml",
+  "descriptionHtml": "<p>Oracle19c Database Administration - Performance Tuning</p><p>HML - Hybrid Mode Learning</p><p>Version1</p><p>Oracle19c DBA Performance Tuning</p><ul><li>Memory Tuning</li><li>Object Tuning</li><li>Application Tuning</li><li>I/O Tuning</li><li>SQL Tuning</li><li>Tools &amp; Utilities﻿</li></ul>",
+  "featured": true,
+  "order": 3,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

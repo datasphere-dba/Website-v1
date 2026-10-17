@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-dba-on-aws-cloud-rds",
+  "title": "Oracle19c DBA on AWS Cloud RDS DS-v1, HML",
+  "subtitle": "Oracle19c DBA on AWS Cloud RDS",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 1999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-dba-on-aws-cloud-rds",
+  "descriptionHtml": "<p>Oracle19c DBA on AWS Cloud RDS<br />HML - Hybrid Mode Learning<br />DS Version1<br /></p>",
+  "featured": false,
+  "order": 13,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-dba-backup-recovery-hml",
+  "title": "Oracle19c DBA Backup & Recovery, HML",
+  "subtitle": "Oracle19c DBA Backup & Recovery",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-dba-backup-recovery-hml",
+  "descriptionHtml": "<p>Oracle19c Database Administration - Backup &amp; Recovery</p><p>HML - Hybrid Mode Learning</p><p>Version1</p><p>Oracle19c Database Administration Backup &amp; Recovery</p><ul><li>Introduction: Different Backup options</li><li>Backup Strategy &amp; FRA</li><li>Logical Backup &amp; Recovery</li><li>Physical Backup &amp; Recovery</li><li>RMAN - Recovery Manager﻿</li></ul>",
+  "featured": true,
+  "order": 6,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

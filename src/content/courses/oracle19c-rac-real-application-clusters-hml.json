@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-rac-real-application-clusters-hml",
+  "title": "Oracle19c RAC - Real Application Clusters, HML",
+  "subtitle": "Oracle19c RAC - Real Application Clusters",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-rac-real-application-clusters-hml",
+  "descriptionHtml": "<p>Oracle19c RAC - Real Application Clusters</p><p>HML - Hybrid Mode Learning</p><p>Version1</p><p>Oracle19c RAC - Real Application Clusters</p><p>28 Extensive Sessions</p>",
+  "featured": false,
+  "order": 10,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "postgresql17-db-expert-olt",
+  "title": "PostgreSQL17 DB Expert, OLT",
+  "subtitle": "PostgreSQL17 DB Expert",
+  "technology": "postgresql",
+  "kind": "course",
+  "mode": "olt",
+  "priceInr": 11999,
+  "enrolUrl": "https://training.datasphere.co.in/course/postgresql17-db-expert-olt",
+  "descriptionHtml": "<p><strong>PostgreSQL17 </strong><strong>DB Expert</strong></p><p>OLT - Online Live Training</p><p><strong>1. PostgreSQL17 DB Administration</strong></p><p>(Architecture, Implementation, DB Management, Tablespace Management, Table | Index | User | Role Management, Backup &amp; Recovery, Performance Tuning)</p><p><strong>2. Advanced PostgreSQL17 DB Administration </strong></p><p>(Standby Replication: Architecture, Implementation, Configuration, Management, Modification, Scaling</p><p>Special Indexes, PostgreSQL17 as NoSQL DB, PostgreSQL17 as AI DB)</p>",
+  "featured": true,
+  "order": 5,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

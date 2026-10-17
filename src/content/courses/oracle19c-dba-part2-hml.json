@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-dba-part2-hml",
+  "title": "Oracle19c DBA Part2, HML",
+  "subtitle": "Oracle19c Database Administration",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-dba-part2-hml",
+  "descriptionHtml": "<p>Oracle19c Database Administration - Part2</p><p>HML - Hybrid Mode Learning</p><p>Version1</p><p>Oracle19c Database Administration Part2</p><ul><li>Table Management</li><li>Partition Table Management</li><li>Index Management</li><li>User Management</li><li>Networking</li></ul>",
+  "featured": false,
+  "order": 7,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

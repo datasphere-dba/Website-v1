@@ -1,0 +1,15 @@
+{
+  "slug": "mongodb8-db-expert-olt",
+  "title": "MongoDB8 DB Expert, OLT",
+  "subtitle": "MongoDB8 DB Expert",
+  "technology": "nosql",
+  "kind": "course",
+  "mode": "olt",
+  "priceInr": 11999,
+  "enrolUrl": "https://training.datasphere.co.in/course/mongodb8-db-expert-olt",
+  "descriptionHtml": "<p><strong>MongoDB8 </strong><strong>DB Expert</strong></p><p>OLT - Online Live Training</p><p>1. MongoDB8 DB Administration</p><p>Architecture, Implementation, DB Management, Collection Management, Index Management, MQL, Backup &amp; Recovery, Performance Tuning</p><p>2. MongoDB8 DB Advanced Administration</p><p>Build Multiple Services in a Single Server, MongoDB Replication, and MongoDB Sharding</p>",
+  "featured": false,
+  "order": 19,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

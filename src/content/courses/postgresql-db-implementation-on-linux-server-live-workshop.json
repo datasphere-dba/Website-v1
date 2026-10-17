@@ -1,0 +1,15 @@
+{
+  "slug": "postgresql-db-implementation-on-linux-server-live-workshop",
+  "title": "PostgreSQL DB Implementation on Linux Server,  LIVE Workshop",
+  "subtitle": "LIVE Workshop",
+  "technology": "postgresql",
+  "kind": "workshop",
+  "mode": "live-workshop",
+  "priceInr": 199,
+  "enrolUrl": "https://training.datasphere.co.in/course/postgresql-db-implementation-on-linux-server-live-workshop",
+  "descriptionHtml": "<p><strong>PostgreSQL DB Implementation on Linux Server</strong></p><p><strong>BYOS - Build Your Own Server</strong></p><p>Architecture</p><p>4 Phases</p><p>Configuration Consideration</p><p>Networking Requirements</p><p>Challenges &amp; Solutions</p><p><strong>Implement PostgreSQL DB on Your Own Linux Server</strong></p><p>Types of Implementation</p><p>Repository-Based Implementation, Advantages &amp; Limitations</p><p>4-Phases Implementation</p><p>9 Steps Implementation</p><p>Verifying the Implementation</p><p><strong>Important Tools &amp; Utilities</strong></p><p>Environment Variable Settings</p><p>Using pg_ctl</p><p>Using psql</p><p><strong>Managing Service</strong></p><p>Root User</p><p>Postgres User</p><p>Using System Control Utility</p><p>Using Postgres Control Utility</p><p><strong>Connect &amp; Work with Database</strong></p><p>Connecting Database</p><p>Get details using PSQL Options</p><p>Generate details using SQL Statements</p>",
+  "featured": false,
+  "order": 9,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

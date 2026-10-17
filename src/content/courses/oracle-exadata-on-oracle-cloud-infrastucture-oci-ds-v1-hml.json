@@ -1,0 +1,15 @@
+{
+  "slug": "oracle-exadata-on-oracle-cloud-infrastucture-oci-ds-v1-hml",
+  "title": "Oracle Exadata on Oracle Cloud Infrastructure - OCI, DS-v1, HML",
+  "subtitle": "Oracle Exadata on OCI, a detailed overview",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle-exadata-on-oracle-cloud-infrastucture-oci-ds-v1-hml",
+  "descriptionHtml": "<p>Oracle Exadata, a detailed overview<br /></p><b>Oracle Exadata on Oracle Cloud Infrastructure - OCI</b><br /><p>The Next Level of Inftra for Oracle DB<br /></p><p>For Every Special Oracle DBA<br /></p><br />",
+  "featured": false,
+  "order": 15,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "oci-oracle-cloud-infrastructure",
+  "title": "OCI - Oracle Cloud Infrastructure",
+  "subtitle": "OCI for All Oracle DBAs",
+  "technology": "oracle",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oci-oracle-cloud-infrastructure",
+  "descriptionHtml": "<p><strong>Oracle Cloud Infrastructure</strong></p><p>The Best Way to begin exploring OCI</p><p>For Every Oracle DBA</p><p>Available in HML Mode</p><p>HML - Hybrid Mode Learning</p><p>(a Special Mode of Learning for Excellence)</p><p><strong>More about the course</strong></p><p>This course is to transform YOU from</p><p>a Traditional Oracle Database environment to an Oracle Cloud environment.</p><p>Master the components of Oracle Cloud Infrastructure &amp; services that</p><p>enable YOU to transform YOUR customer to a Cloud environment, a present-day requirement.</p><p>This course is framed to equip YOU, the Training Participant</p><p>with facilities in OCI that helps in choosing YOU as a First-Hand Consultant by YOUR Customer.</p>",
+  "featured": true,
+  "order": 1,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

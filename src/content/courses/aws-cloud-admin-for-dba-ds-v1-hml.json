@@ -1,0 +1,15 @@
+{
+  "slug": "aws-cloud-admin-for-dba-ds-v1-hml",
+  "title": "AWS Cloud Admin for DBAs, DS v1, HML",
+  "subtitle": "AWS Cloud Admin for DBAs",
+  "technology": "cloud",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 7999,
+  "enrolUrl": "https://training.datasphere.co.in/course/aws-cloud-admin-for-dba-ds-v1-hml",
+  "descriptionHtml": "<p><b>AWS, the preferred Cloud for All Databases</b><br /></p><p><b>AWS enables You to manage RDBMS in RDS and Other Databases as DBaaS</b><br /></p><p>Architecture<br /></p><p>Characteristics<br /></p><p>Features<br /></p><p>Account Creation<br /></p><p>EC2 - Elastic Compute Cloud<br /></p><p>VPC - Virtual Private Cloud<br /></p><p>S3 - Simple Storage Service<br /></p><p>IAM - Identity And Access Management<br /></p><p>AWSCLI - AWS Command Line Interface<br /></p>",
+  "featured": false,
+  "order": 8,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

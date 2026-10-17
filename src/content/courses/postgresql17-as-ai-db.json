@@ -1,0 +1,15 @@
+{
+  "slug": "postgresql17-as-ai-db",
+  "title": "PostgreSQL17 as AI DB",
+  "subtitle": "PostgreSQL17 as AI DB, dbaStanza HML",
+  "technology": "postgresql",
+  "kind": "course",
+  "mode": "hml",
+  "priceInr": 1999,
+  "enrolUrl": "https://training.datasphere.co.in/course/postgresql17-as-ai-db",
+  "descriptionHtml": "<p><strong>PostgreSQL17 as AI DB</strong><strong>*</strong></p><p><strong>dbaStanza Initiative</strong></p><p><strong>HML - Hybrid Mode Learning</strong></p><ol><li><strong>BYOS-PostgreSQL17: Build Your Own Server for PostgreSQL17</strong></li><li><strong>PostgreSQL17 DB Architecture</strong></li><li><strong>PostgreSQL17 DB Implementation</strong></li><li><strong>AI Ecosystem, DB &amp; DBA</strong></li><li><strong>Features and Advantages of PostgreSQL as AI DB</strong></li><li><strong>PostgreSQL17 AI DB Architecture</strong></li><li><strong>Transforming PostgreSQL as AI DB (Vector Database)</strong></li><li><strong>Preparing Database for Vector Data - AI Data</strong></li><li><strong>Table Management in AI DB</strong></li><li><strong>Index Management in AI DB</strong></li><li><strong>Backup Considerations</strong></li><li><strong>Performance Tuning Considerations</strong></li></ol><p>*  prerequisite is PostgreSQL17 DB Administration</p>",
+  "featured": false,
+  "order": 12,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

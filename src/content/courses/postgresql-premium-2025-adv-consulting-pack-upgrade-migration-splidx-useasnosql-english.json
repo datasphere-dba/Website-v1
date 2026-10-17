@@ -1,0 +1,15 @@
+{
+  "slug": "postgresql-premium-2025-adv-consulting-pack-upgrade-migration-splidx-useasnosql-english",
+  "title": "PostgreSQL Premium 2025 (English)",
+  "subtitle": "PostgreSQL Premium: Advanced Consulting Package: Upgrade-Migration-SpecialIndexes-useAsNoSQL-DB",
+  "technology": "postgresql",
+  "kind": "package",
+  "mode": "hml",
+  "priceInr": 3999,
+  "enrolUrl": "https://training.datasphere.co.in/course/postgresql-premium-2025-adv-consulting-pack-upgrade-migration-splidx-useasnosql-english",
+  "descriptionHtml": "<p><b>PostgreSQL Premium ( English )</b><br /></p><p>The Advanced &amp; Consulting Topics<br /></p><p>A 4-in-1 Package<br /></p><p>eVideo Class Language: English<br /></p><p>eGuide Language: English<br /></p><p>Daily DBA Session Language: English<br /></p><p><b>Upgrade</b><br /></p><p>The PostgreSQL database incorporates many features including behaving like NoSQL Database from version 12.<br /></p><p>Many implementations have been done across industry verticles, by many Companies and are used for many projects.<br /></p><p>The organization started using version 15, the most stable version with additional features.<br /></p><p>Now, arises the requirement of Upgrading the Database along with the software. Hence Upgrade of Database.<br /></p><p><b>Migration</b><br /></p><p>The initial implementation was done without giving importance to the Platform, OS, or Database design.<br /></p><p>As the usage increased, optimizing the database for Performance enhancement &amp; Availability was Provisioned.<br /></p><p>The way to achieve the use of a Newer Platform with a desired OS and optimal database design is required.<br /></p><p>Hence Migration of the database is required.<br /></p><p><b>Special Indexes</b><br /></p><p>The PostgreSQL DB accommodates Special types of data seamlessly.<br /></p><p>The special type of data that is stored is usually Unstructured data, the regular indexes used in RDBMS are not suitable.<br /></p><p>Hence the Special Indexes are required and used.<br /></p><h3>Use As NoSQL DB<br /></h3><p>The very reason PostgreSQL has become popular is its capability to accommodate NoSQL Data seamlessly.<br /></p><p>The RDBMS facility in PostgreSQL is used for NoSQL data.<br /></p><p>Using PostgreSQL as a NoSQL database with the RDBMS facility such as Table, SQL, DML, etc.<br /></p><p>PostgreSQL DB is used as a NoSQL Database Seamlessly.<br /></p>",
+  "featured": false,
+  "order": 18,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "oracle19c-dba-a-9-in-1-package",
+  "title": "Oracle Universe: Oracle19c DBA: a 9-in-1 Package, HML",
+  "subtitle": "Oracle Universe: Oracle19c DBA: a 9-in-1 Package",
+  "technology": "oracle",
+  "kind": "package",
+  "mode": "hml",
+  "priceInr": 9999,
+  "enrolUrl": "https://training.datasphere.co.in/course/oracle19c-dba-a-9-in-1-package",
+  "descriptionHtml": "<p><strong>1. Oracle19c DBA Part 1</strong></p><p>Architecture, Implementation, Database Management, Tablespace (TBS) Management, Files Management</p><p><strong>2. Oracle19c DBA Part 2</strong></p><p>Schema Management: Tables, Indexes, Users, Privileges, Roles</p><p><strong>3. Oracle19c DBA Backup &amp; Recovery</strong></p><p>Logical Backup – Data Pump, Physical Backup &amp; Recovery, RMAN, use cases galore</p><p><strong>4. Oracle19c DBA Performance Tuning</strong></p><p>5 Key Areas, 20 Bottlenecks, SQL Tuning, Overview of 5 Tools, Detailed Coverage of 2 Tools</p><p><strong>5. Oracle19c RAC – Real Application Clusters</strong></p><p>Architecture, Implementation, RAC &amp; Database Management, and more</p><p><strong>6. Oracle Cloud Infrastructure (OCI)</strong></p><p>Architecture, Components, Compute Services, Storage Services, Account Management, Connectivity &amp; Working with OCI</p><p><strong>7. Oracle Autonomous Database on OCI</strong></p><p>Architecture, Characteristics, Cost Estimation, Provisioning, Connectivity &amp; Working, Backup &amp; Recovery, Cloning, and more</p><p><strong>8. Oracle Exadata Overview on OCI</strong></p><p>Architecture, Components, Storage Servers, Database Systems, Storage Systems</p><p><strong>9. Oracle19c DBA on AWS Cloud RDS</strong></p><p>Architecture, Provisioning, RDS Management, Database Management, Backup &amp; Recovery, and more</p><h3><strong>A Comprehensive Oracle DBA Learning Package</strong></h3><p>A comprehensive package designed to <strong>ReFresh and build in-depth Oracle DBA knowledge</strong>, covering both <strong>On-Premises and Cloud environments</strong>.</p><p>The program includes <strong>Online Live Guidance Sessions with Mohan Kumar S.</strong>, providing practical guidance across the different Oracle DBA technologies and platforms. Choose sessions on weekdays, weekends, or both.</p>",
+  "featured": true,
+  "order": 4,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}

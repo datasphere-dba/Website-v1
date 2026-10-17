@@ -1,0 +1,15 @@
+{
+  "slug": "database-specialist-map-2026-olt-v2",
+  "title": "Database Specialist MAP 2026, OLT, V2",
+  "subtitle": "Database Specialist MAP - MongoDB, AWS, PostgreSQL",
+  "technology": "cloud",
+  "kind": "package",
+  "mode": "olt",
+  "priceInr": 24000,
+  "enrolUrl": "https://training.datasphere.co.in/course/database-specialist-map-2026-olt-v2",
+  "descriptionHtml": "<p>Database Specialist MAP 2026* v2</p><p>OLT - Online Live Training</p><p>MAP - MongoDB8 | AWS | PostgreSQL17</p><p><strong>PostgreSQL</strong></p><p>1. PostgreSQL17 DB Expert (Architecture, Implementation, DB Management, Tablespace Management, Table | Index | User | Role Management, Backup &amp; Recovery, Performance Tuning)</p><p>2. PostgreSQL17 DB Advanced Administration (Standby-Replication: Architecture, Implementation, Configuration, Management, Modification, Scaling)</p><p><strong>MongoDB </strong></p><p>1. MongoDB8 DB Administration (Architecture, Implementation, DB Management, Collection Management, Index Management, Backup &amp; Recovery, Performance Tuning)</p><p>2. MongoDB8 DB Advanced Administration (Build Multiple Services in a Single Server, MongoDB Replication, MongoDB Sharding)</p><p><strong>AWS - Amazon Web Services</strong></p><p>1. AWS Cloud Admin for DBA* (EC2 Architecture, Provision, Connect &amp; Work, Monitor, Modify, Manage, AWSCli, VPC - Virtual Private Cloud, S3 - Simple Storage Service, IAM - Identity And Access Management)</p><p>2. Top5 Databases on AWS Cloud [RDS + DBaaS]* (Oracle/MSSQL Server, MySQL, PostgreSQL, AuroraDB, DocumentDB )</p><p><strong>* (All courses are OLT, only </strong>AWS Cloud DBA is HML)</p><p>* AI topics included</p><p><strong>     AI Database Specialist MAP is  the Signature package</strong></p><p><strong>                                                                                                         @ DataSphere </strong></p>",
+  "featured": false,
+  "order": 16,
+  "status": "live",
+  "sourceUpdatedAt": "2026-10-08"
+}
