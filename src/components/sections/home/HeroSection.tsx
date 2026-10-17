@@ -85,7 +85,7 @@ export function HeroSection() {
 
             <div className="relative aspect-[6/7] overflow-hidden bg-linen">
               <Image
-                src="/mohan-kumar-portrait.jpg"
+                src="/images/mentor/mohan-kumar-portrait.jpg"
                 alt="Mohan Kumar S., lead DBA mentor at DataSphere"
                 fill
                 priority

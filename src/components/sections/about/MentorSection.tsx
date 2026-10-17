@@ -19,7 +19,7 @@ export function MentorSection() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-linen/60 flex items-center justify-center">
               <Image
-                src="/mentor-mohan-kumar.jpg"
+                src="/images/mentor/mentor-mohan-kumar.jpg"
                 alt="Mohan Kumar S. — DataSphere lead mentor"
                 fill
                 sizes="(max-width: 1024px) 100vw, 420px"

@@ -43,7 +43,7 @@ export function MentorSection() {
 
       <div className="relative aspect-[5/6] sm:aspect-[4/3] lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[44%]">
         <Image
-          src="/mohan-kumar-portrait.jpg"
+          src="/images/mentor/mohan-kumar-portrait.jpg"
           alt="Mohan Kumar S."
           fill
           sizes="(min-width: 1024px) 44vw, 100vw"
