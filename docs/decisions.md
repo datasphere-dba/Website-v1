@@ -17,3 +17,5 @@
 - 16 Oct 2026: Font CSS variables are `--font-newsreader`, `--font-hanken-grotesk`, `--font-ibm-plex-mono`, mapped to `font-serif/sans/mono` via `@theme inline`. Hairline borders via `border-hairline`, `border-t-hairline`, `border-b-hairline` utilities (Tailwind has no border-width theme namespace).
 - Open: admin DB + auth; email service; chatbot (SalesIQ vs custom RAG).
 - 16 Oct 2026: Proprietary LICENSE (all rights reserved, Datasphere Edu Solutions Pvt. Ltd.) + package.json "license": "UNLICENSED". No open-source licence. Company legal name still to be confirmed by HR.
+- 17 Oct 2026: Repo cleanup structure: all section components use distinct names ending in *Section (e.g. HomeMentorSection vs AboutMentorSection, AboutHeroSection, AboutCtaSection, TeachingRulesSection). Mentor images organized under public/images/mentor/ (mohan-kumar-portrait.jpg for color hero/spotlight, mentor-mohan-kumar.jpg for about section); unreferenced duplicates removed. Hardcoded values sourced from src/config/site.ts.
+

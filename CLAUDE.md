@@ -85,7 +85,7 @@ Rebuild of **datasphere.co.in** for **DataSphere Edu Solutions Pvt. Ltd.**, a Be
 - **ESLint 9** (`eslint-config-next`).
 - Package manager: **npm** (`package-lock.json` is committed; don't switch to pnpm/yarn).
 - **Hosting: Netlify free plan** (commercial use allowed). Vercel Hobby is not allowed for a commercial org repo, so don't add Vercel-only features (`@vercel/*` packages, Vercel KV/Blob, Edge Config). GoDaddy stays as domain/DNS only.
-- **Repo:** `github.com/datasphere-dba/Website-v1`, owned by the company org. Venkatesh is a collaborator. `main` auto-deploys once Netlify is connected.
+- **Repo:** `github.com/DataSphere-Edu-Solutions-Pvt-Ltd/Website-v1`, owned by the company org. Venkatesh is a collaborator. `main` auto-deploys once Netlify is connected.
 - **Not decided yet:** database + auth for the admin panel, email service, chatbot. Propose 2–3 options with trade-offs (free tier, works on Netlify, easy for a non-dev team) and wait for a decision.
 
 ---

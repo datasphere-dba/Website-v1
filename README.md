@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DataSphere Website (Website-v1)
+
+Official website for **DataSphere Edu Solutions Pvt. Ltd.** (datasphere.co.in), offering live, instructor-led database administration (DBA) training in Oracle, PostgreSQL, MongoDB, and AWS cloud databases.
+
+## Tech Stack
+
+- **Framework**: Next.js 16.4 (App Router, Turbopack, Cache Components, Partial Prerendering)
+- **Library**: React 19.3
+- **Language**: TypeScript (strict)
+- **Styling**: Tailwind CSS v4 (design tokens in `@theme` inside `src/app/globals.css`)
+- **Package Manager**: npm
+- **Hosting**: Netlify (commercial org)
+
+## Project Structure
+
+```
+src/
+  app/            # Routes: (site)/, admin/, api/, layout, globals.css, sitemap, robots
+  components/
+    layout/       # Header, Footer, MainNav, MobileStickyBar, ChatLauncher
+    sections/     # Page sections (home/, about/)
+    ui/           # Reusable primitives (Button, Container, Logo, SectionIntro)
+  config/         # site.ts (site-wide constants: contact, address, nav links)
+  content/        # Seed data (courses json, blog markdown)
+  lib/            # Utilities & data access (courses, blog, seo)
+  types/          # Shared TypeScript type definitions
+docs/             # project-status.md, decisions.md, prompts/
+public/           # Static assets (images/mentor/, favicon)
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 20+
+- npm
 
+### Installation & Development
 ```bash
+# Install exact dependencies
+npm ci
+
+# Generate route types (required before tsc on fresh clone)
+npx next typegen
+
+# Run local development server (http://localhost:3000)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Run type check & lint
+npx tsc --noEmit
+npm run lint
+
+# Production build
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example` to `.env.local`:
+```bash
+cp .env.example .env.local
+```
+Key variables:
+- `NEXT_PUBLIC_SITE_URL`: Canonical site URL (fallback: `https://datasphere.co.in`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Documentation
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `CLAUDE.md`: Binding developer rules, session protocols, design tokens, and gotchas.
+- `docs/project-status.md`: Current state, next steps, and session logs.
+- `docs/decisions.md`: Append-only architecture and technical decisions log.

@@ -2,15 +2,18 @@
 
 > Claude: read at the start of every session, update before ending. Keep it short.
 
-**Last updated:** 16 Oct 2026
+**Last updated:** 17 Oct 2026
 
 ## Current state
-- Repo `datasphere-dba/Website-v1`: Next.js 16.4, React 19.3, TypeScript strict, App Router, `src/`, Tailwind v4, ESLint.
-- Complete Home page built and verified against the "Main" (`01-home.png`) and "HomeMobile" (`10-home_mobile.png`) artboards.
-- Sections built: Header (announcement bar + nav + mobile menu), Hero (with cropped Mohan Kumar S. portrait & live batch status card), Programs (Database Specialist MAP, Double Track: PM, T-01..T-03 table), Learning Modes (OLT, HML, dbaStanza), Mentor Spotlight (quote + photo + 3 pillars), Testimonials (3 DBA alumni cards), Lead Enquiry Form (interactive with instant feedback), and dark editorial Footer.
+- Repo `DataSphere-Edu-Solutions-Pvt-Ltd/Website-v1`: Next.js 16.4, React 19.3, TypeScript strict, App Router, `src/`, Tailwind v4, ESLint.
+- Home and About pages built and verified against design artboards; repo cleaned up and standardized to target folder structure.
+- Sections built:
+  - Layout: Header (announcement bar + nav + mobile menu), Footer (editorial dark with legal/social links), MainNav (active state), MobileStickyBar, ChatLauncher.
+  - Home: HeroSection (portrait + live batches card), ProgramsSection, LearningModesSection, HomeMentorSection, TestimonialsSection, LeadEnquirySection.
+  - About: AboutHeroSection, AboutMentorSection, TeachingRulesSection, CompanySection, AboutCtaSection.
+- Assets reorganized: unused photos removed, mentor images moved to `public/images/mentor/`, `.gitkeep` placeholders removed.
+- Components renamed to unique and consistent `*Section` naming; duplicate hard-coded values sourced from `src/config/site.ts`.
 - TypeScript check (`npx tsc --noEmit`), ESLint (`npm run lint`), and production build (`npm run build`) all pass with 0 errors.
-
-- Home page visual pass (16 Oct, evening): matched against the Main/HomeMobile artboards. Shared `SectionIntro` + `ChatLauncher` + `MainNav` (active link) components added; container widened to 85rem.
 
 ## Next steps
 1. Convert course sheet → `src/content/courses.json`; build `/courses` and `/courses/[slug]`.
@@ -35,3 +38,4 @@
 - 16 Oct 2026: Built full Home page from "Main" & "HomeMobile" artboards with high-fidelity components, responsive layouts, and verified in browser.
 - 16 Oct 2026: Home page visual fixes: hero card no longer covers the photo, missing borders fixed (non-existent `divide-*-hairline` classes), section headers match design, mentor photo full-bleed, form error state, mobile tidy-up.
 - 16 Oct 2026: Rebuilt About page, Header, Footer, and social/contact links to match reference mockups on branch feat/about-page.
+- 17 Oct 2026: Repo cleanup (branch chore/repo-cleanup): removed unused assets, moved mentor images to public/images/mentor/, renamed section components to unique and consistent *Section names, sourced constants from site.ts, standardized TODO comments, rewrote README.md, updated org repo URLs.
