@@ -9,13 +9,13 @@ import { siteConfig } from "@/config/site";
  * learner portal.
  */
 export function CompanySection() {
-  const { legalName, trainerCentralUrl } = siteConfig;
+  const { legalName, trainerCentralUrl, address } = siteConfig;
 
   const rows: { label: string; value: string | ReactNode }[] = [
     { label: "Registered name", value: legalName },
     {
       label: "Registered office",
-      value: "#20, 2nd Main Road, Kanaka Layout, BSK 2nd Stage, Bengaluru 560070",
+      value: `${address.street}, ${address.city} ${address.postalCode}`,
     },
     { label: "Training since", value: "[YEAR]" },
     {

@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 // Admin pages must never appear in search results. Child pages inherit this
 // `robots` value because they don't set their own.
-// TODO: protect /admin with auth once the DB + auth provider is decided.
+// TODO(auth): protect /admin with auth once the DB + auth provider is decided.
 export const metadata: Metadata = {
   title: { template: `%s | Admin | ${siteConfig.name}`, default: `Admin | ${siteConfig.name}` },
   robots: { index: false, follow: false },

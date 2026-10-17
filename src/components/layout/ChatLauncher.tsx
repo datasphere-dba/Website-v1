@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 
 // Floating "Which batch fits my shift?" button from the design (desktop only;
 // on mobile the sticky bar does this job).
-// TODO: open the chatbot here once it's decided. Until then it opens WhatsApp.
+// TODO(chatbot): open the chatbot here once it's decided. Until then it opens WhatsApp.
 export function ChatLauncher() {
   const href = `${siteConfig.whatsappHref}?text=${encodeURIComponent(
     "Hi, which DBA batch fits my work shift?",

@@ -47,7 +47,7 @@ export function LeadEnquirySection() {
         }),
       });
 
-      // TODO: drop the 501 case once /api/leads sends to Zoho CRM.
+      // TODO(zoho): drop the 501 case once /api/leads sends to Zoho CRM.
       // Until then a "success" here means the lead was NOT saved anywhere.
       setStatus(res.ok || res.status === 501 ? "success" : "error");
     } catch {

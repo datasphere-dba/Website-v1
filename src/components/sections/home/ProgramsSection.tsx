@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 
-// TODO: move to src/content once the course sheet is converted; fees still to confirm.
+// TODO(courses): move to src/content once the course sheet is converted; fees still to confirm.
 const packages = [
   {
     meta: "Package · 3 tracks · 6 courses",
@@ -111,7 +111,7 @@ export function ProgramsSection() {
                   <span className={`block text-xs ${pkg.dark ? "text-paper/60" : "text-ink/60"}`}>
                     Program fee
                   </span>
-                  {/* TODO: real fee from the confirmed course sheet. */}
+                  {/* TODO(courses): real fee from the confirmed course sheet. */}
                   <span className="font-serif text-3xl">₹ [FEE]</span>
                 </div>
                 <a
@@ -131,7 +131,7 @@ export function ProgramsSection() {
         <ul className="mt-6 border-t border-ink">
           {tracks.map((track) => (
             <li key={track.code} className="border-b border-ink/15">
-              {/* TODO: link to /courses/[slug] once course pages exist. */}
+              {/* TODO(courses): link to /courses/[slug] once course pages exist. */}
               <a
                 href="#enquire"
                 className="group grid grid-cols-[1fr_auto] items-center gap-x-8 gap-y-2 py-5 sm:py-7 lg:grid-cols-[4.5rem_minmax(0,1.35fr)_minmax(0,1.5fr)_10rem_auto]"

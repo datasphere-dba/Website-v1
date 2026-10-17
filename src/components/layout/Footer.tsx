@@ -17,7 +17,7 @@ export function Footer() {
               Experience the difference.
             </p>
             <p className="mt-3 text-xs leading-relaxed text-paper/60 max-w-xs">
-              Datasphere Edu Solutions Pvt. Ltd. — live database administration training for working DBAs.
+              {siteConfig.legalName} — live database administration training for working DBAs.
             </p>
           </div>
 

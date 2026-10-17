@@ -13,7 +13,7 @@ export function Header() {
             <span className="shrink-0 font-mono text-[11px] tracking-wider text-sage uppercase">
               Admissions open
             </span>
-            {/* TODO: confirm the next batch date with the team. */}
+            {/* TODO(team): confirm the next batch date with the team. */}
             <span className="truncate text-paper/85">
               PostgreSQL 17, MongoDB 8 and AWS Cloud DB batches start 24th Feb
             </span>

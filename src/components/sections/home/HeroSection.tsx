@@ -2,7 +2,7 @@ import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 
-// TODO: replace with real batch data (course sheet / admin panel) once confirmed.
+// TODO(courses): replace with real batch data (course sheet / admin panel) once confirmed.
 const nextBatches = [
   { course: "PostgreSQL 17", mode: "OLT", time: "Sat-Sun · 9:30am" },
   { course: "PostgreSQL 17", mode: "OLT", time: "Mon-Wed · 6:00am" },
@@ -23,7 +23,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-10">
           {/* Left: headline and actions */}
           <div className="lg:col-span-7">
-            {/* TODO: confirm the founding year with the team. */}
+            {/* TODO(team): confirm the founding year with the team. */}
             <p className="font-mono text-xs tracking-[0.18em] text-ink/65 uppercase">
               Live DBA training · Online<span className="hidden sm:inline"> · Since 2012</span>
             </p>

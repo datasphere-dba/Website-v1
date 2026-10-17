@@ -8,13 +8,13 @@ export type NavLink = {
 
 export const siteConfig = {
   name: "DataSphere",
-  // TODO: HR to confirm the company name to display.
+  // TODO(hr): confirm the company name to display.
   legalName: "Datasphere Edu Solutions Pvt. Ltd.",
   description:
     "Database and DBA training in Bengaluru and online: Oracle, MySQL, PostgreSQL, MongoDB and more.",
   // Falls back to the live domain so canonical URLs and the sitemap are absolute.
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://datasphere.co.in",
-  // TODO: HR to confirm the address to display.
+  // TODO(hr): confirm the address to display.
   address: {
     street: "#20 2nd Main Road, Kanaka Layout, BSK 2nd Stage",
     city: "Bengaluru",
